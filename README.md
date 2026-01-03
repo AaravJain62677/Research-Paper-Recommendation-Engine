@@ -3,6 +3,16 @@
 This project implements a content-based recommendation system for academic research papers.  
 It analyzes paper titles and abstracts, converts textual data into numerical features using TF-IDF vectorization, and computes similarity scores using cosine similarity to recommend relevant papers based on a user’s research interest.
 
+## 📦 Dataset
+
+The dataset is too large to be hosted directly on GitHub.
+
+Download it from Kaggle:
+https://www.kaggle.com/datasets/sumitm004/arxiv-scientific-research-papers-dataset
+
+After downloading, place the CSV file in the project root directory.
+
+
 ## 🚀 Features
 - Topic-based academic paper recommendation
 - TF-IDF vectorization for text representation
@@ -55,5 +65,6 @@ Integrate citation-based ranking
 Improve UI with paper bookmarking and search history
 
 📄 Author
+
 
 Aarav Jain
