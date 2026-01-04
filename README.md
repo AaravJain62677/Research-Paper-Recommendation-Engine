@@ -12,6 +12,13 @@ https://www.kaggle.com/datasets/sumitm004/arxiv-scientific-research-papers-datas
 
 After downloading, place the CSV file in the project root directory.
 
+## 🎯 Problem Statement
+With millions of research papers published every year, finding relevant academic literature
+has become increasingly difficult for students and researchers. Traditional keyword-based
+search often returns overwhelming or irrelevant results.
+
+This project aims to simplify academic discovery by recommending research papers based on
+semantic similarity rather than exact keyword matching.
 
 ## 🚀 Features
 - Topic-based academic paper recommendation
@@ -20,12 +27,38 @@ After downloading, place the CSV file in the project root directory.
 - Interactive web interface for real-time querying
 - Displays paper titles with abstract previews
 
+## 💡 Use Cases
+- Students searching for papers for assignments or projects
+- Researchers exploring new domains or literature reviews
+- Educators recommending reading material
+- Early-stage researchers identifying related work
+
 ## 🧠 How It Works
 1. Load and clean the academic paper dataset  
 2. Combine title and abstract into a single text field  
 3. Convert text into TF-IDF vectors  
 4. Compute similarity between user query and all papers  
 5. Rank and display the most relevant papers  
+
+## 🏗️ System Architecture
+User Query  
+→ Text Vectorization (TF-IDF)  
+→ Cosine Similarity Calculation  
+→ Top-N Relevant Papers  
+→ Streamlit Interface Display
+
+## 📊 Dataset Information
+- Source: Kaggle (arXiv Scientific Research Papers)
+- Fields Used:
+  - Title
+  - Abstract (Summary)
+- Size: ~10k+ research papers
+- Domains: Computer Science, Physics, Mathematics, Biology, etc.
+
+## 📈 Performance Notes
+- TF-IDF with max_features=10,000 ensures efficient memory usage
+- Cosine similarity provides fast ranking for large document sets
+- Suitable for real-time recommendations on moderate datasets
 
 ## 🖥️ Running the Project
 
@@ -65,6 +98,7 @@ Integrate citation-based ranking
 Improve UI with paper bookmarking and search history
 
 📄 Author
+> Aarav Jain
+⭐ If you found this project useful, consider giving it a star!
 
 
-Aarav Jain
